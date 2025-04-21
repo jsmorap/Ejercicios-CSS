@@ -1,70 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SliderHover</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Slider and Hover</title>
 
-    </head>
-    <body>
-        <h2>Ejercicios CSS - SliderHover</h2>
-        <div class="slider-frame">
-            <ul>
-                <li><img src="img/1.png" alt=""></li>
-                <li><img src="img/2.png" alt=""></li>
-                <li><img src="img/3.png" alt=""></li>
-                <li><img src="img/4.png" alt=""></li>
-                <li><img src="img/5.jpg" alt=""></li>
-            </ul>
-        </div>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
 
-        <section id="hover">
-        <div class="container">
-            <div class="wrapper">
-                <div class="card_area">
-                    <div class="card">
-                        <img src="img/image1.jpg" alt="leon">
+<body>
+    <div class="wrap">
+        <h1>Escoge tu animal favorito</h1>
+        <div class="animal-wrapper">
+            <div class="category_list">
+                <a href="#" class="category_item" category="all">Todos</a>
+                <a href="#" class="category_item" category="mamiferos">Mamíferos</a>
+                <a href="#" class="category_item" category="aves">Aves</a>
+                <a href="#" class="category_item" category="anfibios">Anfibios</a>
+                <a href="#" class="category_item" category="reptiles">Reptiles</a>
+                <a href="#" class="category_item" category="peces">Peces</a>
+
+            </div>
+
+            <section class="animal-list">
+                <div class="animal-item" category="mamiferos">
+                    <div class="image-container">
+                        <img src="img/leon.jpg" alt="leon">
                         <div class="overlay">
-                            <h1>León</h1>
-                            <p>El <span>León</span> es un mamífero carnívoro de origen africano de la familia de los félidos y una de las cinco especies del género Panthera.</p>
+                            <p class="text">El león, rey de la selva.</p>
                         </div>
                     </div>
+                    <a href="#">León</a>
                 </div>
-            </div>
-        </div> 
-
-        <div class="container">
-            <div class="wrapper">
-                <div class="card_area">
-                    <div class="card">
-                        <img src="img/image2.jpg" alt="tiburon">
-                            <div class="overlay">
-                                <h1>Tiburon Blanco</h1>
-                                <p>El <span>tiburon blanco</span> es una especie de pez cartilaginoso lamniforme de la familia Lamnidae (escualo). Vive en las aguas cálidas y templadas de casi todos los océanos.</p>
-                            </div>
-                        </div>    
-                    </div>
-                </div>    
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="wrapper">
-                <div class="card_area">
-                    <div class="card">
-                        <img src="img/image3.jpg" alt="tiburon">
-                            <div class="overlay">
-                                <h1>Águila Calva</h1>
-                                <p>El <span>águila calva</span> es un ave rapaz accipitriforme​ de la familia Accipitridae, que habita en América del Norte, del sur de Canadá a Baja California Sur y Sonora en México.</p>
-                            </div>
+                <div class="animal-item" category="mamiferos">
+                    <div class="image-container">
+                        <img src="img/tigre.jpg" alt="tigre">
+                        <div class="overlay">
+                            <p class="text">El majestuoso tigre.</p>
                         </div>
                     </div>
+                    <a href="#">Tigre</a>
                 </div>
-            </div>
+                <div class="animal-item" category="mamiferos">
+                    <div class="image-container">
+                        <img src="img/chimpance.jpeg" alt="chimpance">
+                        <div class="overlay">
+                            <p class="text">El inteligente chimpancé.</p>
+                        </div>
+                    </div>
+                    <a href="#">Chimpancé</a>
+                </div>
+                <div class="animal-item" category="mamiferos">
+                    <div class="image-container">
+                        <img src="img/osopanda.jpg" alt="oso">
+                        <div class="overlay">
+                            <p class="text">El adorable oso panda.</p>
+                        </div>
+                    </div>
+                    <a href="#">Oso Panda</a>
+                </div>
+                <div class="animal-item" category="aves">
+                    <div class="image-container">
+                        <img src="img/buhoreal.JPG" alt="buho">
+                        <div class="overlay">
+                            <p class="text">El sabio búho real.</p>
+                        </div>
+                    </div>
+                    <a href="#">Búho Real</a>
+                </div>
+                <div class="animal-item" category="aves">
+                    <div class="image-container">
+                        <img src="img/pavoreal.jpg" alt="pavo">
+                        <div class="overlay">
+                            <p class="text">El colorido pavo real.</p>
+                        </div>
+                    </div>
+                    <a href="#">Pavo Real</a>
+                </div>
+                <div class="animal-item" category="aves">
+                    <div class="image-container">
+                        <img src="img/tucan.jpg" alt="tucan">
+                        <div class="overlay">
+                            <p class="text">El llamativo tucán.</p>
+                        </div>
+                    </div>
+                    <a href="#">Tucán</a>
+                </div>
+                <div class="animal-item" category="reptiles">
+                    <div class="image-container">
+                        <img src="img/iguana.jpg" alt="iguana">
+                        <div class="overlay">
+                            <p class="text">La tranquila iguana.</p>
+                        </div>
+                    </div>
+                    <a href="#">Iguana</a>
+                </div>
+                <div class="animal-item" category="reptiles">
+                    <div class="image-container">
+                        <img src="img/NiloCrocodilo.jpg" alt="cocodrilo">
+                        <div class="overlay">
+                            <p class="text">El temible cocodrilo del Nilo.</p>
+                        </div>
+                    </div>
+                    <a href="#">Cocodrilo del Nilo</a>
+                </div>
+                <div class="animal-item" category="reptiles">
+                    <div class="image-container">
+                        <img src="img/tortugademar.jpg" alt="tortuga">
+                        <div class="overlay">
+                            <p class="text">La longeva tortuga de mar.</p>
+                        </div>
+                    </div>
+                    <a href="#">Tortuga de Mar</a>
+                </div>
+                <div class="animal-item" category="anfibios">
+                    <div class="image-container">
+                        <img src="img/ajolote.jpg" alt="ajolote">
+                        <div class="overlay">
+                            <p class="text">El curioso ajolote.</p>
+                        </div>
+                    </div>
+                    <a href="#">Ajolote</a>
+                </div>
+                <div class="animal-item" category="anfibios">
+                    <div class="image-container">
+                        <img src="img/ranaamarilla.jpg" alt="rana">
+                        <div class="overlay">
+                            <p class="text">La vibrante rana amarilla.</p>
+                        </div>
+                    </div>
+                    <a href="#">Rana Amarilla</a>
+                </div>
+                <div class="animal-item" category="anfibios">
+                    <div class="image-container">
+                        <img src="img/salamandrasauceda.jpg" alt="salamandra">
+                        <div class="overlay">
+                            <p class="text">La escurridiza salamandra sauceda.</p>
+                        </div>
+                    </div>
+                    <a href="#">Salamandra Sauceda</a>
+                </div>
+                <div class="animal-item" category="peces">
+                    <div class="image-container">
+                        <img src="img/atun.jpeg" alt="atun">
+                        <div class="overlay">
+                            <p class="text">El veloz atún.</p>
+                        </div>
+                    </div>
+                    <a href="#">Atún</a>
+                </div>
+                <div class="animal-item" category="peces">
+                    <div class="image-container">
+                        <img src="img/pez-payaso.jpg" alt="payaso">
+                        <div class="overlay">
+                            <p class="text">El simpático pez payaso.</p>
+                        </div>
+                    </div>
+                    <a href="#">Pez Payaso</a>
+                </div>
+                <div class="animal-item" category="peces">
+                    <div class="image-container">
+                        <img src="img/tiburonblanco.jpg" alt="tiburon">
+                        <div class="overlay">
+                            <p class="text">El imponente tiburón blanco.</p>
+                        </div>
+                    </div>
+                    <a href="#">Tiburón Blanco</a>
+                </div>
+            </section>
         </div>
-        </section>
-
-    </body>
-</html>
+    </div>
+</body>

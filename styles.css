@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.wrap{
+    max-width: 1100;
+    width: 90%;
+    margin: auto;
+}
+
+.wrap > h1{
+    color: bisque;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.wrap > h1::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #c7c7c7;
+    margin: 20px 0;
+}
+
+.animal-wrapper{
+   display: flex;
+    
+}
+
+.category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: #41a33e;
+
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+}
+
+.category_list .ct_item-active{
+    background: #18460c;
+}
+
+/*Tarjetas de animales*/
+
+.animal-list{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animal-list .animal-item{
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+
+    transition: all .4s;
+}
+
+.animal-list .animal-item img{
+    width: 100%;   
+}
+
+.animal-list .animal-item a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #6c4806;  
+
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*
+#img{
+    width: 246px;
+    height: 245px;
+}
+*/
+/* ... tus estilos existentes ... */
+
+.animal-item {
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    transition: all .4s;
+    position: relative; /* Añadimos esto para posicionar el overlay */
+    overflow: hidden; /* Recortamos el overlay si se sale */
+}
+
+.image-container {
+    position: relative; /* Para posicionar el overlay dentro */
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.animal-item img {
+    width: 100%;
+    height: auto; /* Aseguramos que la imagen se ajuste al contenedor */
+    display: block; /* Evita espacio extra debajo de la imagen */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.overlay .text {
+    text-align: center;
+    padding: 10px;
+}
+
+.animal-item:hover .overlay {
+    opacity: 1; /* Mostrar el overlay al hacer hover */
+}
+
+.animal-list .animal-item a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #6c4806;
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1; /* Asegura que el texto del enlace esté encima del overlay si es necesario */
+    position: relative; /* Para el z-index funcione correctamente */
+}
+
+.animal-list .animal-item .image-container img {
+    width: 100%;
+    height: 245px; /* Mantenemos la altura fija */
+    object-fit: fill; /* Cambiamos a 'fill' */
+    display: block;
+}
+
+/* Eliminamos o comentamos estos estilos duplicados o innecesarios */
+/* #img {
+    width: 246px;
+    height: 245px;
+} */
+
+
+
+
+
+
+
