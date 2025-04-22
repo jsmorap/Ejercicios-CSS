@@ -8,7 +8,7 @@ Un slider visual y atractivo para mostrar destinos turísticos y fauna, construi
 
 El objetivo es ofrecer una solución visual para mostrar diferentes destinos turísticos y fauna de Colombia. Cada tarjeta contiene una imagen, una breve descripción y un botón de acción.
 
-Este carrusel es:
+Este slider es:
 - 🔁 Deslizable (tipo slider y hover)
 - 📱 100% responsive
 - 🧩 Fácil de personalizar
