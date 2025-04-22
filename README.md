@@ -1,6 +1,6 @@
-# 🌎 Slider y Hover Turístico Interactivo con Swiper.js
+# 🌎 Slider y Hover Turístico y Fauna Interactivo con Swiper.js
 
-Un slider visual y atractivo para mostrar destinos turísticos, construido con **HTML, CSS** y la librería **Swiper.js**. Ideal para proyectos de turismo, portafolios, o landing pages.
+Un slider visual y atractivo para mostrar destinos turísticos y fauna, construido con **HTML, CSS** y la librería **Swiper.js**. Ideal para proyectos de turismo, portafolios, o landing pages.
 
 ---
 
