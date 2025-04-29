@@ -5,23 +5,102 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Slider and Hover</title>
 
+    <!--iconos -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="styles.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
+
+    <!--Slider-->
+    <div class="container-swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="img/Guatepe.jpg" alt="Card Image" class="card-image">
+                        <p class="badge Guatape">Guatape</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus
+                            molestiae voluptatem culpa sint obcaecati fugiat eaque, voluptatum explicabo quis recusandae
+                            numquam qui et quam consequuntur ullam repellendus animi nobis!</h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="img/Coveñas.png" alt="Card Image" class="card-image">
+                        <p class="badge Coveñas">Coveñas</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus
+                            molestiae voluptatem culpa sint obcaecati fugiat eaque, voluptatum explicabo quis recusandae
+                            numquam qui et quam consequuntur ullam repellendus animi nobis!</h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="img/Bogota.png" alt="Card Image" class="card-image">
+                        <p class="badge Bogota">Bogota</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus
+                            molestiae voluptatem culpa sint obcaecati fugiat eaque, voluptatum explicabo quis recusandae
+                            numquam qui et quam consequuntur ullam repellendus animi nobis!</h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="img/Amazonas.png" alt="Card Image" class="card-image">
+                        <p class="badge Amazonas">Amazonas</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus
+                            molestiae voluptatem culpa sint obcaecati fugiat eaque, voluptatum explicabo quis recusandae
+                            numquam qui et quam consequuntur ullam repellendus animi nobis!</h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="img/CañoCristales.png" alt="Card Image" class="card-image">
+                        <p class="badge CañoCristales">Caño Cristales</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus
+                            molestiae voluptatem culpa sint obcaecati fugiat eaque, voluptatum explicabo quis recusandae
+                            numquam qui et quam consequuntur ullam repellendus animi nobis!</h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!--Hover-->
     <div class="wrap">
         <h1>Escoge tu animal favorito</h1>
         <div class="animal-wrapper">
             <div class="category_list">
-                <a href="#" class="category_item" category="all">Todos</a>
-                <a href="#" class="category_item" category="mamiferos">Mamíferos</a>
-                <a href="#" class="category_item" category="aves">Aves</a>
-                <a href="#" class="category_item" category="anfibios">Anfibios</a>
-                <a href="#" class="category_item" category="reptiles">Reptiles</a>
-                <a href="#" class="category_item" category="peces">Peces</a>
-
+                <a href="javascript:void(0);" class="category_item" category="all">Todos</a>
+                <a href="javascript:void(0);" class="category_item" category="mamiferos">Mamíferos</a>
+                <a href="javascript:void(0);" class="category_item" category="aves">Aves</a>
+                <a href="javascript:void(0);" class="category_item" category="anfibios">Anfibios</a>
+                <a href="javascript:void(0);" class="category_item" category="reptiles">Reptiles</a>
+                <a href="javascript:void(0);" class="category_item" category="peces">Peces</a>
             </div>
 
             <section class="animal-list">
